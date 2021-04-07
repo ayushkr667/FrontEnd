@@ -1,0 +1,35 @@
+body {
+  background: url('../images/bgGymOp.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Shrikhand', cursive;
+}
+
+div {
+  background-color: #dd4814;
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+  border-radius: 25px; /*makes curvy border*/
+  opacity: 0.8; /* transparency */
+}
+
+button {
+  background: rgba(173, 170, 170);
+  padding: 20px; /*from all side*/
+  color: black; /*color of text inside */
+  font-size: 2em;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+p {
+  font-size: 1.8em;
+}
+
+i {
+  color: white;
+  font-size: 40m;
+}
