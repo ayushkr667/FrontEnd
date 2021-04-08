@@ -1,0 +1,84 @@
+/* reset everything inbuilt */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  background: radial-gradient(white, gray);
+  font-family: 'Lobster', cursive;
+}
+
+.wrapper {
+  width: 300px;
+  height: 350px;
+  margin: 50px auto;
+  border: solid 6px black;
+  border-radius: 15px;
+  background: white;
+}
+
+.header {
+  /* use 100 percent of div wrapper */
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  background: linear-gradient(black, white);
+  border-radius: 10px 10px 0 0;
+  font-size: 25px;
+  padding-top: 10px;
+  color: rgb(243, 220, 10);
+}
+
+span {
+  border-bottom: dashed 2px black;
+  display: block;
+  height: 90%;
+  width: 100%;
+}
+
+.wrap-list {
+  height: 85%;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 0 3px black;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  top: 3px;
+  right: 12px;
+  float: right;
+}
+
+input[type='checkbox']:checked + label {
+  text-decoration: line-through;
+  /* a here is alpha level ( can called opacity) */
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.list {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.list li {
+  width: 100%;
+  float: left;
+  margin-left: 5px;
+  height: 100%;
+}
+
+.label {
+  padding: 10px;
+  float: left;
+  width: 90%;
+}
+
+.gray {
+  background: rgba(0, 0, 50, 0.1);
+}
