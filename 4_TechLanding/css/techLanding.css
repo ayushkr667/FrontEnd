@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+}
+
+/* .mynav {
+  background-color: gray;
+} */
+
+.navbar-default .navbar-brand {
+  color: black;
+}
+
+body {
+  /* background: url(https://images.unsplash.com/photo-1430876988766-1be68caef0e4?ixlib=rb-1.2.1&amp); */
+  background: url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb);
+  background-size: cover;
+  /* keeps background image  to center always*/
+  background-position: center;
+  font-family: 'Catamaran';
+}
+
+.center {
+  text-align: center;
+  padding-top: 15%;
+}
+
+h1,
+p {
+  color: white;
+}
+
+h2 > span {
+  color: whitesmoke;
+}
+
+#login {
+  min-width: 400px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px 15px 0;
+  overflow: hidden;
+  color: rgb(64, 2, 2);
+}
+
+#login .social-button {
+  /* margin between two buttons */
+  margin: 12px 0;
+  padding-top: 12px;
+  width: 100%;
+}
+
+.btn-fb {
+  color: #fff;
+  background-color: #3b5998;
+}
+/* on hover fb button */
+.btn-fb:hover {
+  color: #fff;
+  background-color: #496ebc;
+}
+
+.btn-tw {
+  color: #fff;
+  background-color: #55acee;
+}
+
+.btn-gm {
+  color: white;
+  background-color: rgb(222, 72, 47);
+}
+
+.btn-gm:hover {
+  background-color: rgb(241, 176, 176);
+  color: #fff;
+}
+
+/* will work on less than 768px size of screen*/
+@media (max-width: 768px) {
+  h1 {
+    background-color: #20011c;
+    opacity: 0.7;
+  }
+  h2 {
+    background-color: #4d0303;
+    opacity: 0.7;
+  }
+}
+/* minimum width should 768px to work this query */
+@media (min-width: 768px) {
+  h1 {
+    background-color: rgb(2, 37, 51);
+    opacity: 0.8;
+  }
+  h2 {
+    background-color: rgb(2, 2, 37);
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>My Website</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fabicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23fa4e29%22></rect><path fill=%22%23f4fbf5%22 d=%22M32.17 57.60L32.17 57.60Q31.52 58.15 30.50 58.47Q29.47 58.80 28.13 58.80L28.13 58.80Q26.32 58.80 25.15 58.35Q23.97 57.90 23.62 56.80L23.62 56.80Q22.22 52.40 21.32 49.67Q20.42 46.95 19.92 44.90L19.92 44.90L19.67 44.90Q19.52 47.85 19.45 50.27Q19.37 52.70 19.35 55Q19.32 57.30 19.25 59.65Q19.17 62 19.02 64.85L19.02 64.85Q18.37 65.10 17.32 65.27Q16.27 65.45 15.22 65.45L15.22 65.45Q13.02 65.45 11.80 64.75Q10.57 64.05 10.57 62.20L10.57 62.20Q10.57 60.65 10.72 57.67Q10.87 54.70 11.10 51.10Q11.32 47.50 11.57 43.70Q11.82 39.90 12.02 36.70L12.02 36.70Q12.42 36.05 13.77 35.30Q15.12 34.55 17.57 34.55L17.57 34.55Q20.22 34.55 21.72 35.38Q23.22 36.20 23.92 38.05L23.92 38.05Q24.38 39.25 24.90 40.80Q25.42 42.35 25.95 44Q26.47 45.65 26.97 47.27Q27.47 48.90 27.88 50.20L27.88 50.20L28.13 50.20Q29.32 46 30.52 42.07Q31.72 38.15 32.72 35.50L32.72 35.50Q33.47 35.10 34.65 34.82Q35.82 34.55 37.27 34.55L37.27 34.55Q39.72 34.55 41.27 35.27Q42.82 36 43.07 37.35L43.07 37.35Q43.27 38.35 43.50 40.42Q43.72 42.50 43.97 45.10Q44.22 47.70 44.47 50.60Q44.72 53.50 44.95 56.17Q45.17 58.85 45.32 61.07Q45.47 63.30 45.52 64.50L45.52 64.50Q44.67 65 43.75 65.22Q42.82 65.45 41.37 65.45L41.37 65.45Q39.47 65.45 38.17 64.80Q36.88 64.15 36.77 62.25L36.77 62.25Q36.47 56.80 36.40 52.45Q36.32 48.10 36.17 45.15L36.17 45.15L35.92 45.15Q35.42 47.10 34.47 50.05Q33.52 53 32.17 57.60ZM65.07 42.15L65.07 42.15Q65.63 41.90 66.80 41.57Q67.97 41.25 69.17 41.25L69.17 41.25Q71.28 41.25 72.67 41.88Q74.07 42.50 74.38 43.70L74.38 43.70Q74.92 45.75 75.40 47.52Q75.88 49.30 76.32 50.92Q76.78 52.55 77.20 54.15Q77.63 55.75 78.03 57.50L78.03 57.50L78.28 57.50Q78.72 54.45 79.07 51.67Q79.42 48.90 79.72 46.22Q80.03 43.55 80.32 40.92Q80.63 38.30 80.92 35.60L80.92 35.60Q82.78 34.55 84.88 34.55L84.88 34.55Q86.72 34.55 88.07 35.35Q89.42 36.15 89.42 38.05L89.42 38.05Q89.42 39.15 89.20 41.17Q88.97 43.20 88.60 45.70Q88.22 48.20 87.72 50.95Q87.22 53.70 86.67 56.20Q86.13 58.70 85.55 60.72Q84.97 62.75 84.47 63.85L84.47 63.85Q83.72 64.55 82.03 65Q80.32 65.45 78.53 65.45L78.53 65.45Q76.17 65.45 74.55 64.83Q72.92 64.20 72.57 63.05L72.57 63.05Q71.92 61.05 71.17 58.30Q70.42 55.55 69.57 52.25L69.57 52.25Q68.88 55.50 68.13 58.60Q67.38 61.70 66.77 63.85L66.77 63.85Q66.02 64.55 64.52 65Q63.02 65.45 61.22 65.45L61.22 65.45Q58.97 65.45 57.15 64.83Q55.32 64.20 54.77 63.05L54.77 63.05Q54.32 62.15 53.80 60.38Q53.27 58.60 52.72 56.32Q52.17 54.05 51.60 51.40Q51.02 48.75 50.55 46.10Q50.07 43.45 49.67 40.92Q49.27 38.40 49.07 36.30L49.07 36.30Q49.77 35.65 51.02 35.10Q52.27 34.55 53.72 34.55L53.72 34.55Q55.63 34.55 56.85 35.38Q58.07 36.20 58.38 38.15L58.38 38.15Q59.17 43.25 59.70 46.65Q60.22 50.05 60.55 52.22Q60.88 54.40 61.02 55.60Q61.17 56.80 61.32 57.50L61.32 57.50L61.57 57.50Q62.02 55.50 62.42 53.80Q62.82 52.10 63.25 50.38Q63.67 48.65 64.13 46.67Q64.57 44.70 65.07 42.15Z%22></path></svg>"
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/techLanding.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default mynav">
+      <div class="container">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Website</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div
+            class="collapse navbar-collapse"
+            id="bs-example-navbar-collapse-1"
+          >
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <a href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li><a href="#">Anout Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Sign Up</a></li>
+              <!-- <li><a href="#">Log In</a></li> -->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Log In<span class="caret"></span
+                ></a>
+                <ul id="login" class="dropdown-menu">
+                  <li>
+                    <div class="row">
+                      <div class="col-md-12">
+                        Log In via:
+                        <div class="social-button">
+                          <a href="#" class="btn btn-fb">
+                            <i class="fab fa-facebook-f"></i>
+                            Facebook
+                          </a>
+                          <a href="#" class="btn btn-tw">
+                            <i class="fab fa-twitter"></i>
+                            Twitter
+                          </a>
+                          <a href="#" class="btn btn-gm">
+                            <i class="fab fa-google-plus-g"></i>
+                            Google
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
+    </nav>
+
+    <div class="container center">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>
+            <!-- class fa-stact stack icons one over other-->
+            <!-- fa-lg will increase te size of icon  -->
+            <!-- 2x means it is twice larger than lower icon -->
+            <span class="fa-stack fa-lg">
+              <i class="far fa-square fa-stack-2x"></i>
+              <i class="fab fa-twitter fa-stack-1x"></i>
+            </span>
+          </h2>
+          <h1>My Website is Comming soon.</h1>
+          <p class="fa-lg">Waiting is not easy but try it this time.</p>
+          <button class="btn btn-success btn-lg">
+            <i class="fas fa-spinner fa-spin fa-lg"></i>
+            <br />Click Me
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
