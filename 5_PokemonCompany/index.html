@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Pokemon Go</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- fonsawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+
+    <!-- Animated css CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Fabicon Link -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%236b0813%22></rect><path d=%22M48.83 60.75L43.61 60.75L43.61 77.58Q42.62 77.86 40.55 78.13Q38.48 78.39 36.32 78.39L36.32 78.39Q31.55 78.39 29.71 76.77Q27.86 75.16 27.86 70.92L27.86 70.92L27.86 28.27Q27.86 26.38 28.90 25.34Q29.93 24.30 31.73 23.67L31.73 23.67Q34.79 22.59 38.98 22.10Q43.16 21.60 46.58 21.60L46.58 21.60Q59.00 21.60 65.57 26.91Q72.14 32.23 72.14 41.31L72.14 41.31Q72.14 45.72 70.47 49.28Q68.81 52.83 65.80 55.40Q62.78 57.96 58.46 59.36Q54.14 60.75 48.83 60.75L48.83 60.75ZM43.52 48.42L47.84 48.42Q51.62 48.42 53.87 46.58Q56.12 44.73 56.12 41.31L56.12 41.31Q56.12 37.89 54.01 36.05Q51.89 34.20 47.84 34.20L47.84 34.20Q46.40 34.20 45.46 34.25Q44.51 34.30 43.52 34.48L43.52 34.48L43.52 48.42Z%22 fill=%22%23fff%22></path></svg>"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/pokemonstyle.css" />
+  </head>
+
+  <body>
+    <!-- navigation bar starts Here  -->
+    <div class="navbar-wrapper">
+      <div class="container">
+        <!-- class navbar-static-top will fix the navbar always on top -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Pokemon</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="nav navbar-nav">
+                <li class="active">
+                  <a href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li><a href="#">About Pokemons</a></li>
+                <li><a href="#">Catch Pokemons</a></li>
+                <li class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Locations <span class="caret"></span
+                  ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">California</a></li>
+                    <li><a href="#">Mumbai</a></li>
+                    <li><a href="#">London</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Upcoming Gigs</li>
+                    <li><a href="#">Brazil</a></li>
+                    <li><a href="#">China</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#"><i class="fas fa-user-plus"></i> Signup</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </div>
+          <!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+    <!-- navigation bar ends Here -->
+
+    <!-- Crousel starts here -->
+    <div id="myCrousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carousel-example-generic"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/pikachu.jpg" alt="First slide" />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Some Headline</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+                consectetur tempore sit quam aut beatae ipsum culpa. Saepe,
+                magnam cum!
+              </p>
+              <p><a class="btn btn-default btn-lg" href="#">Learn More</a></p>
+            </div>
+          </div>
+          <div class="carousel-caption"></div>
+        </div>
+        <div class="item">
+          <img src="images/Side2.jpg" alt="Second slide" />
+          <div class="carousel-caption">
+            <h1>Some Headline</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+              consectetur tempore sit quam aut beatae ipsum culpa. Saepe, magnam
+              cum!
+            </p>
+            <p><a class="btn btn-default btn-lg" href="#">Learn More</a></p>
+          </div>
+          <div class="carousel-caption"></div>
+        </div>
+        <div class="item">
+          <img src="images/catty.jpg" alt="Third slide" />
+          <div class="carousel-caption">
+            <h1>Some Headline</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus
+              consectetur tempore sit quam aut beatae ipsum culpa. Saepe, magnam
+              cum!
+            </p>
+            <p><a class="btn btn-default btn-lg" href="#">Learn More</a></p>
+          </div>
+          <div class="carousel-caption"></div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a
+        class="left carousel-control"
+        href="#carousel-example-generic"
+        role="button"
+        data-slide="prev"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-left"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#carousel-example-generic"
+        role="button"
+        data-slide="next"
+      >
+        <span
+          class="glyphicon glyphicon-chevron-right"
+          aria-hidden="true"
+        ></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Crousel Ends here -->
+
+    <!-- Team section start Here -->
+    <div class="container team">
+      <div class="row">
+        <div class="col-lg-4">
+          <img
+            src="images/boy.jpg"
+            alt="boy 1 image"
+            class="img-circle animate__animated animate__wobble"
+            width="140"
+            height="140"
+          />
+          <h2>Team member 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+            autem, sapiente eaque corrupti impedit reiciendis possimus atque
+            mollitia tempora ducimus.
+          </p>
+          <p><a href="#" class="btn btn-default">Sign Up &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="images/boy.jpg"
+            alt="boy 1 image"
+            class="img-circle animate__animated animate__wobble"
+            width="140"
+            height="140"
+          />
+          <h2>Team member 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+            autem, sapiente eaque corrupti impedit reiciendis possimus atque
+            mollitia tempora ducimus.
+          </p>
+          <p><a href="#" class="btn btn-default">Sign Up &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img
+            src="images/boy.jpg"
+            alt="boy 1 image"
+            class="img-circle animate__animated animate__wobble"
+            width="140"
+            height="140"
+          />
+          <h2>Team member 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+            autem, sapiente eaque corrupti impedit reiciendis possimus atque
+            mollitia tempora ducimus.
+          </p>
+          <p><a href="#" class="btn btn-default">Sign Up &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Team section Ends here -->
+
+    <hr class="divider" />
+
+    <!-- Content Section starts here -->
+    <div class="row content">
+      <div class="col-md-7 micky">
+        <h2 class="content-heading">
+          First heading goes here.
+          <span class="text-muted"> This looks great</span>
+        </h2>
+        <p class="lead">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eum,
+          nam iusto ab itaque odit magni? Cupiditate, in dolores nulla debitis
+          esse fugiat possimus facere quasi quaerat quis quo, laboriosam id
+          quisquam ab architecto! Eius?
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="images/paying-kid.jpg"
+          alt="playing kid"
+          class="content-image img-responsive center-block team-image"
+        />
+      </div>
+    </div>
+
+    <div class="row content">
+      <div class="col-md-5">
+        <img
+          src="images/paying-kid.jpg"
+          alt="playing kid"
+          class="content-image img-responsive center-block team-image"
+        />
+      </div>
+      <div class="col-md-7 micky">
+        <h2 class="content-heading">
+          First heading goes here.
+          <span class="text-muted"> This looks great</span>
+        </h2>
+        <p class="lead">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eum,
+          nam iusto ab itaque odit magni? Cupiditate, in dolores nulla debitis
+          esse fugiat possimus facere quasi quaerat quis quo, laboriosam id
+          quisquam ab architecto! Eius?
+        </p>
+      </div>
+    </div>
+
+    <div class="row content">
+      <div class="col-md-7 micky">
+        <h2 class="content-heading">
+          First heading goes here.
+          <span class="text-muted"> This looks great</span>
+        </h2>
+        <p class="lead">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt eum,
+          nam iusto ab itaque odit magni? Cupiditate, in dolores nulla debitis
+          esse fugiat possimus facere quasi quaerat quis quo, laboriosam id
+          quisquam ab architecto! Eius?
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="images/paying-kid.jpg"
+          alt="playing kid"
+          class="content-image img-responsive center-block team-image"
+        />
+      </div>
+    </div>
+    <!-- content Section Ends here -->
+
+    <!-- footer section starts here -->
+    <footer>
+      <p class="pull-right">
+        <i class="fas fa-arrow-circle-up"></i> Move to top
+      </p>
+      <p>
+        &copy: 2020 Pokemon, Inc. <a href="#">Terms</a> &middot;
+        <a href="#">Conditions</a>
+      </p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
