@@ -1,0 +1,66 @@
+body {
+  font-family: 'Rosario', sans-serif;
+  background-color: rgb(83, 53, 53);
+}
+
+.nav-sidebar {
+  margin: 80px -20px 20px 20px;
+}
+
+.nav-sidebar > li > a {
+  padding: 20px 20px;
+}
+
+.main {
+  margin-top: 50px;
+  background-color: rgb(56, 2, 2);
+}
+
+.main > h1 {
+  color: whitesmoke;
+}
+
+.placeholders {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.placeholder img {
+  display: inline;
+  border-radius: 50%;
+}
+
+.sub-header {
+  color: whitesmoke;
+}
+
+.table {
+  color: rgb(12, 0, 0);
+  background-color: rgb(9, 118, 138);
+}
+
+.t-row :hover {
+  background-color: rgb(1, 68, 1);
+  color: grey;
+}
+
+#sticky-footer {
+  color: whitesmoke;
+  flex-shrink: none;
+  background-color: goldenrod;
+  height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.nav-sidebar > li > a :hover{
+  color: rgb(10, 10, 248);
+}
+
