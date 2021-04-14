@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Password Generator</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- fabicon link -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23dc3d4b%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2250%22>🤖</text></svg>"
+    />
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="css/passwordGen.css" />
+  </head>
+  <body>
+    <div class="curve">
+      <div class="container">
+        <form action="#" name="passGen">
+          <div class="col-xs-12">
+            <input type="text" class="out" name="output" disabled />
+
+            <input
+              type="button"
+              value="Generate password"
+              class="btn btn-success btn-block myBtn"
+              onclick="populateForm(this.form.length.value)"
+            />
+            <br />
+
+            <div class="col-xs-10">
+              <strong class="pass">Password Length: </strong>
+            </div>
+
+            <div class="col-xs-2">
+              <input class="in" type="text" name="length" size="3" value="6" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- attach javascript file -->
+    <script src="passgen.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
