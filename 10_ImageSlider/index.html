@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Image Slider</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+
+    <!-- fabicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230befe0%22></rect><path d=%22M22.01 59.05L22.01 59.05Q22.01 62.20 19.67 63.97Q17.33 65.75 12.83 65.75L12.83 65.75Q10.99 65.75 9.48 65.48Q7.97 65.21 6.87 64.69Q5.77 64.17 5.16 63.43Q4.55 62.69 4.55 61.79L4.55 61.79Q4.55 60.94 4.93 60.31Q5.32 59.68 5.95 59.27L5.95 59.27Q7.21 60.08 8.85 60.71Q10.49 61.34 12.65 61.34L12.65 61.34Q14.50 61.34 15.44 60.73Q16.39 60.13 16.39 59.05L16.39 59.05Q16.39 57.20 13.69 56.62L13.69 56.62L11.17 56.03Q7.84 55.27 6.24 53.73Q4.64 52.21 4.64 49.64L4.64 49.64Q4.64 46.72 6.98 44.89Q9.32 43.07 13.55 43.07L13.55 43.07Q15.17 43.07 16.54 43.32Q17.92 43.57 18.93 44.04Q19.94 44.51 20.50 45.16Q21.07 45.82 21.07 46.67L21.07 46.67Q21.07 47.48 20.71 48.09Q20.35 48.70 19.85 49.06L19.85 49.06Q19.45 48.79 18.79 48.52Q18.14 48.25 17.35 48.02Q16.57 47.80 15.69 47.64Q14.81 47.48 13.96 47.48L13.96 47.48Q12.20 47.48 11.21 48.04Q10.22 48.61 10.22 49.64L10.22 49.64Q10.22 50.41 10.78 50.90Q11.35 51.40 12.74 51.71L12.74 51.71L14.95 52.25Q18.68 53.11 20.35 54.75Q22.01 56.39 22.01 59.05ZM32.54 65.03L32.54 65.03Q32.18 65.12 31.48 65.26Q30.79 65.39 29.98 65.39L29.98 65.39Q28.36 65.39 27.61 64.81Q26.87 64.22 26.87 62.73L26.87 62.73L26.87 35.83Q27.23 35.69 27.93 35.58Q28.63 35.47 29.44 35.47L29.44 35.47Q31.06 35.47 31.80 36.05Q32.54 36.64 32.54 38.12L32.54 38.12L32.54 65.03ZM38.75 62.73L38.75 43.93Q39.11 43.84 39.81 43.70Q40.50 43.57 41.31 43.57L41.31 43.57Q42.93 43.57 43.68 44.15Q44.42 44.73 44.42 46.22L44.42 46.22L44.42 65.03Q44.06 65.12 43.36 65.26Q42.66 65.39 41.85 65.39L41.85 65.39Q40.23 65.39 39.49 64.81Q38.75 64.22 38.75 62.73L38.75 62.73ZM38.30 37.40L38.30 37.40Q38.30 36.09 39.22 35.17Q40.14 34.25 41.58 34.25L41.58 34.25Q43.02 34.25 43.92 35.17Q44.82 36.09 44.82 37.40L44.82 37.40Q44.82 38.75 43.92 39.67Q43.02 40.59 41.58 40.59L41.58 40.59Q40.14 40.59 39.22 39.67Q38.30 38.75 38.30 37.40ZM70.07 38.12L70.07 60.94Q70.07 61.97 69.62 62.60Q69.17 63.23 68.27 63.82L68.27 63.82Q67.14 64.53 65.30 65.14Q63.45 65.75 61.02 65.75L61.02 65.75Q55.63 65.75 52.45 62.98Q49.28 60.22 49.28 54.50L49.28 54.50Q49.28 51.53 50.13 49.39Q50.99 47.26 52.45 45.86Q53.91 44.47 55.89 43.79Q57.88 43.12 60.17 43.12L60.17 43.12Q61.38 43.12 62.46 43.36Q63.54 43.61 64.40 43.97L64.40 43.97L64.40 35.83Q64.76 35.69 65.46 35.58Q66.16 35.47 66.97 35.47L66.97 35.47Q68.58 35.47 69.33 36.05Q70.07 36.64 70.07 38.12L70.07 38.12ZM64.40 60.31L64.40 48.56Q63.72 48.16 62.82 47.89Q61.92 47.62 60.89 47.62L60.89 47.62Q58.37 47.62 56.70 49.23Q55.04 50.86 55.04 54.55L55.04 54.55Q55.04 58.01 56.64 59.61Q58.23 61.21 60.98 61.21L60.98 61.21Q62.15 61.21 62.98 60.94Q63.81 60.67 64.40 60.31L64.40 60.31ZM92.98 55.18L80.47 56.98Q81.09 59.27 82.81 60.31Q84.52 61.34 87.03 61.34L87.03 61.34Q88.93 61.34 90.52 60.78Q92.12 60.22 93.11 59.59L93.11 59.59Q93.74 59.95 94.15 60.58Q94.55 61.21 94.55 61.93L94.55 61.93Q94.55 62.83 93.94 63.52Q93.34 64.22 92.28 64.72Q91.22 65.21 89.78 65.48Q88.34 65.75 86.68 65.75L86.68 65.75Q84.02 65.75 81.84 65.03Q79.66 64.31 78.10 62.85Q76.55 61.39 75.67 59.23Q74.80 57.07 74.80 54.19L74.80 54.19Q74.80 51.40 75.65 49.33Q76.51 47.26 77.97 45.86Q79.43 44.47 81.37 43.79Q83.30 43.12 85.46 43.12L85.46 43.12Q87.67 43.12 89.51 43.81Q91.36 44.51 92.66 45.75Q93.97 46.98 94.71 48.72Q95.45 50.45 95.45 52.48L95.45 52.48Q95.45 53.73 94.80 54.37Q94.15 55.00 92.98 55.18L92.98 55.18ZM85.46 47.39L85.46 47.39Q83.26 47.39 81.77 48.85Q80.29 50.32 80.11 53.02L80.11 53.02L90.09 51.53Q89.92 49.87 88.79 48.63Q87.67 47.39 85.46 47.39Z%22 fill=%22%23fff%22></path></svg>"
+    />
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- css file of twenty twenty jquery slider -->
+    <link rel="stylesheet" href="css/twentytwenty.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron text-center">
+        <div class="col-xs-12 twentytwenty-container">
+          <!-- <h1>This is Image Slider!</h1> -->
+          <img src="images/img_before.jpg" alt="" />
+          <img src="images/img_after.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
